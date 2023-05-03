@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>Proyecto</title>
+   
+</head>
+<body>
+    <div class="container">
+        <canvas id="myCanvas" width="800" height="600"></canvas>
+        <input type="text" id="startNode" placeholder="Ingrese ID del nodo inicial">
+        <input type="text" id="endNode" placeholder="Ingrese ID del nodo final">
+        
+        <button id="findSecondPathButton" onclick="findSecondPath()">Encontrar caminos</button>
+
+        <div class="actions-text">
+            <span class="left-click">Click izquierdo</span>: Insertar vértices<br>
+            <span class="right-click">Click derecho</span>: Borrar vértices<br>
+            <span class="vertex-selection">Para añadir aristas, selecciona los vértices a unir</span>
+        </div>
+        
+        
+        <div class="optimo-text">
+            El <span class="azul">color azul</span> representa el camino más óptimo.<br>
+            El <span class="verde">color verde</span> representa el segundo camino más óptimo.
+        </div>
+
+   
+
+</body>
+</html>
